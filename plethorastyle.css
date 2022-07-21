@@ -1,0 +1,471 @@
+/*------This part of code is for fixing whole size of the pages
+which fixed to this css file-----*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*this is the body class for font type of the whole pages*/
+.body{
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.top-nav{
+    width: 100%;
+    padding: 10px 0;
+    position: relative;
+}
+.main-menu-buttons{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-menu-hover{
+    position: absolute;
+    background-color: #fff;
+    z-index: 1000;
+    left: 35px;
+    top: 35px;
+   width: 300px;
+    opacity: 0;
+    visibility: hidden;
+    padding: 10px;
+    transition: .5s linear;
+
+    border: 1px solid #ddd;
+
+}
+.nav-menu-hover-active{
+    opacity: 1;
+    visibility: visible;
+    transition: .5s linear;
+
+}
+.nav-menu-hover ul{
+    list-style: none;
+    padding: 20px;
+    top: 0;
+    left: 0;
+    width: 80%;
+    margin: 0 auto;
+
+}
+.nav-menu-hover ul li{
+margin-top: 25px;
+
+}
+.nav-menu-hover h4{
+    z-index: 10000000;
+}
+.header{
+    width:100%;
+    height:100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.header-woman{
+    width: 90%;
+    height: 80%;
+    background-image: url("images/woman1.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateY(-10px);
+
+
+
+}
+
+.header-man{
+    width: 90%;
+    height: 80%;
+    background-image: url("images/messi\ black\ shirt.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateY(-10px);
+}
+.header-man:hover{
+    opacity: 0.3;
+}
+.header-woman:hover{
+    opacity: 0.3;
+}
+.men{
+    color: white;
+  font-size: 20px;
+  padding: 16px 32px
+}
+.women{
+    color: white;
+  font-size: 20px;
+  padding: 16px 32px
+}
+
+/*text must be in the middle of container*/
+.header .women{
+    /* position: relative; */
+    /* text-align: center; */
+    font-weight: bold;
+    color: black;
+    background-color: #FFD700;
+    /* width: 100px; */
+    /* height: 100px; */
+    border-radius: 50%;
+    padding: 40px 15px;
+    /* top: 50%; */
+    /* left: 50%; */
+  }
+  .header .men{
+
+    font-weight: bold;
+    background-color: #FFD700;
+padding: 40px 30px;
+    border-radius: 50%;
+    color: black;
+
+  }
+
+
+
+
+/*--------Container-----------*/
+
+  .footer-container{
+    background-color: rgb(251, 251, 12);
+    position: relative;
+    border-radius: 15px;
+    width: 100%;
+    /* height: 120px; */
+    margin-bottom: 5%;
+
+    padding: 20px 0;
+    border-radius: 0%;
+  }
+  .footer-box{
+    width: 60%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+     place-items: center;
+  }
+
+  .footer-box div h2
+  {
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .btn{
+    display: inline-block;
+    background: black;
+    color: #fff;
+    padding: 10px 30px;
+    margin: 30px 0;
+    transition: 0.5s;
+    font-size: 25px;
+    padding-top: 15px;
+    text-align: center;
+    font-weight: bolder;
+
+}
+  .footer-container li a{
+    bottom: 5%;
+    right: 25%;
+    left: 0%;
+    margin: 3%;
+    display: flex;
+    position:absolute;
+    text-align: center;
+    font-size: 45px;
+  }
+  .hr-line hr{
+    border:none;
+    background: black;
+    height: 1px;
+  }
+
+
+  /*----------testimonial--------------*/
+
+.testimonial{
+    padding-top: 100px;
+}
+.row{display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.testimonial .col-3{
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 0 20px 0px rgb(0,0,0,0.1);
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+.testimonial .col-3 img{
+    width: 50px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+.testimonial .col-3:hover{
+    transform: translateY(-10px);
+}
+.fa.fa-quote-left{
+    font-size: 34px;
+    color: darkblue;
+}
+.col-3 p{
+    font-size: 12px;
+    margin: 12px 0;
+    color: darkblue;
+}
+.testimonial .col-3 h3{
+    font-weight: 600;
+    color: #555;
+    font-size: 16px;
+}
+.col-3{
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+.col-3 img{
+    width: 100%;
+}
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.rating{
+    color: #FFD700;
+}
+.btn:hover{
+    background: #9999ff;
+}
+
+  /*-------------Brands--------------*/
+.brands{
+    margin: 100px auto;
+    flex-basis: center;
+}
+.col-5{
+    width: 160px;
+}
+.col-5 img{
+    width: 100px;
+    cursor: pointer;
+    filter: grayscale(100%);
+}
+.col-5 img:hover{
+    filter: grayscale(0);
+}
+
+
+/*-----navigation-bar--------*/
+
+.navigationa-bar{
+    margin: 30px auto;
+    flex-basis: center;
+    font-size: 25px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigationa-bar ul  {
+        display: inline-block;
+        font-weight: 700;
+}
+
+li a {
+color: black;
+/* padding: 20px 80px; */
+text-decoration: none;
+text-align: center;
+font-family: 'Franklin Gothic Medium';
+}
+
+.navigationa-bar hr{
+border:none;
+background: #b5b5b5;
+height: 1px;
+margin: 20px 0;
+}
+
+
+
+    /*-----------footer---------*/
+
+.footer{
+    background: #000;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px  20px;
+}
+
+.footer p{
+    color: #8a8a8a;
+}
+.footer h3{
+    color: #fff;
+    margin-bottom: 20px;
+}
+.footer-col-1, .footer-col-2 ,.footer-col-3, .footer-col-4{
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+.footer-col-1{
+    flex-basis: 30%;
+}
+.footer-col-2{
+    flex: 1;
+    text-align: center;
+}
+.footer-col-2 img{
+    width: 180px;
+    margin-bottom: 20px;
+}
+.footer-col-3, .footer-col-4{
+    flex-basis: 12%;
+    text-align: center;
+}
+/* ul{
+    /* display: inline block;
+    list-style-type: none;
+    margin-right: 20px;
+    text-align: center;
+} */
+
+
+.app-logo{
+    margin-top: 20px;
+}
+.app-logo img{
+    width: 140px;
+}
+.footer hr{
+    border:none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px 0;
+}
+.Copyright{
+    text-align: center;
+}
+.menu-icon{
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.row{display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+/*-----------------------------------------------------*/
+
+/****************** Products page *********************/
+
+
+
+.col-6{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.col-6 img{
+    max-width: 100%;
+    padding: 50px 0;
+}
+
+.btn:hover{
+    background: #9999ff;
+}
+
+.categories{
+    margin: 70px 0;
+}
+.col-3{
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+.col-3 img{
+    width: 100%;
+}
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.col-4{
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+}
+.col-4 img{
+    width: 100%;
+}
+.title{
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+}
+.title::after{
+    content: '';
+    background: #ff523b;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+h4{
+    color: #555;
+    font-weight: normal;
+}
+.col-4{
+    font-size: 14px;
+}
+.rating{
+    color: #FFD700;
+}
+.col-4:hover{
+    transform: translateY(-5px);
+}
+
+
+/*-------------------BE careful---------------------*/
